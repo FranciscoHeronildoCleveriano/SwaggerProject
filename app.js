@@ -8,7 +8,7 @@ const app = express();
 const swaggerOptions = {
 	swaggerDefinition: {
 		info: {
-			title: "La ele API",
+			title: "API Teste",
 			version: "1.0.0",
 		},
 	},
@@ -32,14 +32,27 @@ app.use(
  *      200:
  *        description: Success
  */
-app.get("/books", (req, res) => {
+app.get("/music", (req, res) => {
 	res.send([
 		{
 			id: 1,
-			name: "Manuel Gomes",
+			name: "Manoel Gomes",
 			music: "Lá ele",
 		},
 	]);
+});
+
+/**
+ * @swagger
+ * /music:
+ *  post:
+ *    description: create new music
+ *    responses:
+ *      201:
+ *        description: Success
+ */
+app.post("/music", (req, res) => {
+	res.status(201).send();
 });
 
 app.listen(5000, () =>
