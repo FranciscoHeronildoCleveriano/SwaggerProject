@@ -1,9 +1,9 @@
 name: Releases
 
-on: 
+on:
   push:
     tags:
-    - '*'
+      - "*"
 
 jobs:
   build:
@@ -11,8 +11,8 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v3
-    - uses: ncipollo/release-action@v1
-      with:
-        artifacts: "release.tar.gz,foo,exec/*.exe"
-        bodyFile: "release.md"
+      - uses: actions/checkout@v3
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "foo/*.exe"
+          bodyFile: "release.md"
