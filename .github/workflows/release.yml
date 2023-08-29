@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      # - run: npm install
+      # - run: npm run dist
       - uses: actions/checkout@v3
       - uses: ncipollo/release-action@v1
         with:
