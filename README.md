@@ -7,8 +7,8 @@
 ## 1. Instalar os pacotes
 
 ```
-    yarn add swagger-autogen
-    yarn add swagger-ui-express
+    npm i swagger-autogen
+    npm i swagger-ui-express
 ```
 
 ## 2. Criar o config em config/swagger.js
