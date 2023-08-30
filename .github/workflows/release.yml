@@ -18,3 +18,4 @@ jobs:
         with:
           artifacts: "exec/*"
           bodyFile: "release.md"
+          commit: "New Version"
